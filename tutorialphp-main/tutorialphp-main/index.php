@@ -5,6 +5,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1> Insertar usuari</h1>
     <form action="recollir.php" method="post" enctype="multipart/form-data" >
     
     <label for="Nom">Nom</label>
@@ -29,6 +30,7 @@
     <br>
     <input type="submit" name="submit" value="Enviar">
     </form>
+    <a href="mostrar.php">Mostrar Usuaris</a>
 
 </body>
 </html>
