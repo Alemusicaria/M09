@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estils.css">
 </head>
 
 <body>
@@ -37,7 +38,7 @@
         if ($mysql->connect_error) {
             die('Problemas con la conexion a la base de datos');
         }
-        $mysql->query("insert into usuaris(Nom, Cicles, Correu, Password, Data_Naixement, Sexe, Foto) 
+        $mysql->query("insert into usuaris(nom, cicles, correu, contrasenya, data_naixement, sexe, foto) 
         values ('$nom', '" . implode(",", $cicle) . "', '$correu', '$hash', '$data', '$sexe', '$desti')") or
             die($mysql->error);
         $mysql->close();

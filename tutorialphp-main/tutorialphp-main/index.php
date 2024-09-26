@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estils.css">
 </head>
 <body>
     <h1> Insertar usuari</h1>
@@ -30,6 +31,7 @@
     <br>
     <input type="submit" name="submit" value="Enviar">
     </form>
+    <br><br>
     <a href="mostrar.php">Mostrar Usuaris</a>
 
 </body>
