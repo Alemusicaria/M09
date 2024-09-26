@@ -11,7 +11,7 @@
     <h1>Taula d'usuaris</h1>
     <br>
     <a href="index.php">Inserir nou usuari</a>
-    <table border="1">
+    <table>
         <tr>
             <th>Nom</th>
             <th>Cicles</th>
@@ -19,8 +19,8 @@
             <th>Data Naixement</th>
             <th>Sexe</th>
             <th>Foto</th>
-            <th>actualitzar</th>
-            <th>eliminar</th>
+            <th>Modificar</th>
+            <th>Eliminar</th>
         </tr>
         <?php
         $mysql = new mysqli("localhost", "root", "", "tutorialPHP");
@@ -38,11 +38,12 @@
             echo "<td>" . $reg["sexe"] . "</td>";
             echo "<td><img src='" . $reg["foto"] . "' width='100'></td>";
             echo "<td>";
-            echo "<a href='eliminar.php?id=" . $reg["id"] . "'>Eliminar</a>";
-            echo "</td>";
-            echo "<td>";
             echo "<a href='modificar.php?id=" . $reg["id"] . "'>Modificar</a>";
             echo "</td>";
+            echo "<td>";
+            echo "<a href='eliminar.php?id=" . $reg["id"] . "'>Eliminar</a>";
+            echo "</td>";
+           
             echo "</tr>";
         }
         $mysql->close();
